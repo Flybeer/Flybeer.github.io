@@ -5,7 +5,7 @@
 </head>
 <body>
   <p name="e"></p>
-    <form onsubmit="convert()">
+    <form action="convert.php">
       Inserisci un numero<br>
       <input type="text" name="number"><br>
       <input type="radio" name="choice" value="Decimale-Binario"> Decimale-Binario<br>
@@ -13,13 +13,6 @@
       <input type="submit">
     </form>
 
-    <script>
-
-      function convert(){
-        var x =  document.getElementById("number").value;
-        document.getElementById('e').innerHTML = x;
-
-      }
-    </script>
+    
 </body>
 </html>
