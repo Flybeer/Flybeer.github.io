@@ -20,12 +20,12 @@
       function fun(){
 
         var x = document.getElementById("number").value;
-
+        document.getElementById("number").innerHTML = x;
         if(document.getElementById("choice").checked){
           var a = [];
           var rest;
 
-          while(x > 0){
+          while(x >= 0){
 
             rest = x%2;
             console.log(rest);
