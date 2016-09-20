@@ -3,33 +3,6 @@
 <head>
   <title>Ciao Mondo!</title>
 </head>
-<script>
-
-  function fun(){
-
-    var x = document.getElementById("number").value;
-
-    if(document.getElementById("choice").checked){
-      var a = [];
-      console.log(x);
-      console.log("Primo if");
-      while(x<0){
-
-        a.push(x%2);
-        x/=2;
-        console.log(x);
-      }
-      console.log(a.toString());
-
-    }
-    console.log(a.toString() + "eeeee");
-
-
-
-  }
-
-
-</script>
 <body>
   <p name="e"></p>
 
@@ -41,6 +14,34 @@
       <input type="submit">
     </form>
 
+
+    <script>
+
+      function fun(){
+
+        var x = document.getElementById("number").value;
+
+        if(document.getElementById("choice").checked){
+          var a = [];
+          console.log(x);
+          console.log("Primo if");
+          while(x<0){
+
+            a.push(x%2);
+            x/=2;
+            console.log(x);
+          }
+          console.log(a.toString());
+
+        }
+        console.log(a.toString() + "eeeee");
+
+
+
+      }
+
+
+    </script>
 
 </body>
 </html>
