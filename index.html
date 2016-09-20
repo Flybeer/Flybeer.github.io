@@ -3,16 +3,22 @@
 <head>
   <title>Ciao Mondo!</title>
 </head>
+<script>
+  var x = document.getElementById("number").value;
+  console.log(x);
+
+</script>
 <body>
   <p name="e"></p>
-    <form action="convert.php">
+
+    <form onsubmit="fun()">
       Inserisci un numero<br>
       <input type="text" name="number"><br>
-      <input type="radio" name="choice" value="Decimale-Binario"> Decimale-Binario<br>
+      <input type="radio" name="choice" value="Decimale-Binario" checked="checked"> Decimale-Binario<br>
       <input type="radio" name="choice" value="Binario-Decimale"> Binario-Decimale<br>
       <input type="submit">
     </form>
 
-    
+
 </body>
 </html>
