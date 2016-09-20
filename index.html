@@ -8,10 +8,12 @@
   function fun(){
 
     var x = document.getElementById("number").value;
-    var con = document.getElementsByName('choice')[1].value;
-    console.log(con);
+    var con = document.getElementsById('choice')[1].value;
+    if(document.getElementsByid("choice").checked){
+      console.log(true);
+    }
     console.log(x);
-    window.location.href = 'http://www.flybeer.github.io/';
+    
   }
 
 
@@ -22,8 +24,8 @@
     <form onsubmit="fun()">
       Inserisci un numero<br>
       <input type="text" id="number"><br>
-      <input type="radio" name="choice" value="Decimale-Binario" checked="checked"> Decimale-Binario<br>
-      <input type="radio" name="choice" value="Binario-Decimale"> Binario-Decimale<br>
+      <input type="radio" id="choice" value="Decimale-Binario" checked="checked"> Decimale-Binario<br>
+      <input type="radio" value="Binario-Decimale"> Binario-Decimale<br>
       <input type="submit">
     </form>
 
