@@ -28,13 +28,13 @@
           while(x > 0){
 
             rest = x%2;
-            console.log(rest);
+
             a.unshift(rest);
             x = parseInt(x/2);
-            console.log(x);
-          }
-            console.log(a.toString().replace(",", ""));
 
+          }
+
+            document.getElementById("p").innerHTML = a.toString().replace(",", "") + "<sub>2</sub>";
         }
 
 
