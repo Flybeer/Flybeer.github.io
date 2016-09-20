@@ -8,9 +8,14 @@
   function fun(){
 
     var x = document.getElementById("number").value;
-    var con = document.getElementById('choice').value;
-    if(document.getElementByid("choice").checked){
+    if(document.getElementById("choice").checked){
       var a = [];
+
+      while(x<0){
+        a.push(x%2);
+        x/=2;
+      }
+      console.log(a.toString());
 
     }
 
