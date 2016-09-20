@@ -6,8 +6,12 @@
 <script>
 
   function fun(){
-    var x = document.getElementById("number").value;
+
+    var x = document.getElementByName("number").value;
+    var con = document.getElementsByName('choice')[1].value;
+    console.log(con);
     console.log(x);
+    window.location.href = 'http://www.flybeer.github.io/';
   }
 
 
