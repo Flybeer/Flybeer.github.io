@@ -23,18 +23,19 @@
 
         if(document.getElementById("choice").checked){
           var a = [];
-          console.log(x);
-          console.log("Primo if");
-          while(x<0){
+          var rest;
 
-            a.push(x%2);
+          while(x<0){
+            console.log(x);
+            rest = x%2;
+            a.unshift(toString(rest));
             x/=2;
             console.log(x);
           }
           console.log(a.toString());
 
         }
-        console.log(a.toString() + "eeeee");
+
 
 
 
